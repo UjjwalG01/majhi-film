@@ -29,16 +29,20 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
     />
 
+    <!-- Slick CSS -->
+    <link rel="stylesheet" type="text/css" href="./css/slick.css" />
+    <link rel="stylesheet" type="text/css" href="./css/slick-theme.css" />
+
     <!-- Custom CSS -->
     <link rel="stylesheet" href="./css/style.css" />
   </head>
 
-  <body>
-    <header class="bg-white py-3">
+  <body class="bg-main-body">
+    <header class="py-3">
       <div
         class="container-fluid d-flex justify-content-between align-items-center"
       >
-        <div class="d-flex align-items-center">
+        <div class="d-flex align-items-center col-md-9">
           <img
             src="./images/favicon/favicon.jpeg"
             alt="Nepal Emblem"
@@ -52,18 +56,18 @@
             <h4 class="mb-0">Majhi Film Maker Association</h4>
           </div>
         </div>
-        <div class="d-flex gap-2 align-items-center">
-          <div class="dropdown mr-3">
+        <div class="d-flex gap-2 align-items-center col-md-3">
+          <div class="dropdown mr-3 w-25">
             <select class="form-select dropdown-toggle" aria-label="Language">
               <option value="EN" selected>EN</option>
               <option value="NP">NP</option>
             </select>
           </div>
-          <form class="form-inline d-flex">
+          <form class="form-inline w-100 d-flex">
             <input
               class="form-control mr-2"
               type="search"
-              placeholder="Search"
+              placeholder="Search..."
               aria-label="Search"
             />
             <button class="btn btn-outline-danger" type="submit">
@@ -86,36 +90,1182 @@
         >
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse bg-primary" id="navbarNav">
-          <ul class="navbar-nav">
+
+        <!-- Navbar Items -->
+        <div
+          class="collapse navbar-collapse bg-light-blue px-4 py-2 rounded-1"
+          id="navbarNav"
+        >
+          <ul class="navbar-nav gap-2 fw-bold nav-link-item">
             <li class="nav-item">
-              <a class="nav-link" href="#">About Us</a>
+              <a class="nav-link" href="#">
+                <i class="fas fa-home"></i>
+              </a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Resources</a>
+
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle text-white-100 font-heading-20"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                About Us
+              </a>
+              <ul
+                class="dropdown-menu font-heading-20 text-white-100 shadow-lg"
+              >
+                <li><a class="dropdown-item" href="#">Introduction</a></li>
+                <li><a class="dropdown-item" href="#">Executive Members</a></li>
+                <li><a class="dropdown-item" href="#">Ex-Members</a></li>
+              </ul>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Related Agencies</a>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle text-white-100 font-heading-20"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Resources
+              </a>
+              <ul
+                class="dropdown-menu font-heading-20 text-white-100 shadow-lg"
+              >
+                <li><a class="dropdown-item" href="#">Library</a></li>
+                <li><a class="dropdown-item" href="#">Act/Regulations</a></li>
+                <li><a class="dropdown-item" href="#">Directives</a></li>
+                <li><a class="dropdown-item" href="#">Publications</a></li>
+                <li><a class="dropdown-item" href="#">Policies</a></li>
+              </ul>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Filming in Nepal</a>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle text-white-100 font-heading-20"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Related Agencies
+              </a>
+              <ul
+                class="dropdown-menu font-heading-20 text-white-100 shadow-lg"
+              >
+                <li>
+                  <a class="dropdown-item" href="#">Government Agencies</a>
+                </li>
+                <li><a class="dropdown-item" href="#">Film Associations</a></li>
+                <li><a class="dropdown-item" href="#">Film Institutes</a></li>
+              </ul>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Media Center</a>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle text-white-100 font-heading-20"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Filming in Nepal
+              </a>
+              <ul
+                class="dropdown-menu font-heading-20 text-white-100 shadow-lg"
+              >
+                <li><a class="dropdown-item" href="#">Web Portal</a></li>
+                <li><a class="dropdown-item" href="#">E-Book</a></li>
+                <li><a class="dropdown-item" href="#">Shot in Nepal</a></li>
+              </ul>
             </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle text-white-100 font-heading-20"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Media Center
+              </a>
+              <ul
+                class="dropdown-menu font-heading-20 text-white-100 shadow-lg"
+              >
+                <li><a class="dropdown-item" href="#">Notice</a></li>
+                <li><a class="dropdown-item" href="#">Press Release</a></li>
+                <li>
+                  <a class="dropdown-item" href="#">Events and Activities</a>
+                </li>
+                <li><a class="dropdown-item" href="#">News</a></li>
+                <li><a class="dropdown-item" href="#">Archive</a></li>
+              </ul>
+            </li>
+
             <li class="nav-item">
-              <a class="nav-link" href="#">Contact Us</a>
+              <a class="nav-link text-white-100 font-heading-20" href="#"
+                >Contact Us</a
+              >
             </li>
           </ul>
         </div>
       </div>
     </nav>
 
+    <!-- News Flash -->
+    <section class="container-fluid">
+      <div class="news-ticker p-0 my-1">
+        <span class="notice-text fw-bold h-100">Notice</span>
+        <a href="#" class="news text-white no-underline">
+          Breaking News: Lorem ipsum dolor sit amet, consectetur adipiscing
+          elit. | More News: Quisque euismod convallis orci, ac placerat nisi...
+        </a>
+      </div>
+    </section>
+
+    <!-- Notifications Badge -->
+    <div class="container-fluid my-3">
+      <div
+        class="alert alert-light-green alert-dismissible fade show d-flex justify-content-between align-items-center px-4 py-3"
+        role="alert"
+      >
+        <p class="fs-6 fw-normal m-0">
+          This is a notice that comes from the system
+        </p>
+        <button
+          type="button"
+          class="close border-0 bg-transparent"
+          data-bs-dismiss="alert"
+          aria-label="Close"
+        >
+          <i aria-hidden="true" class="fa-solid fa-xmark"></i>
+        </button>
+      </div>
+
+      <div
+        class="alert alert-light-green alert-dismissible fade show d-flex justify-content-between align-items-center px-4 py-3"
+        role="alert"
+      >
+        <p class="fs-6 fw-normal m-0">
+          This is a notice that comes from the system
+        </p>
+        <button
+          type="button"
+          class="close border-0 bg-transparent"
+          data-bs-dismiss="alert"
+          aria-label="Close"
+        >
+          <i aria-hidden="true" class="fa-solid fa-xmark"></i>
+        </button>
+      </div>
+    </div>
+
+    <!-- Social Media Sticky Links -->
+    <div class="icon-bar">
+      <a href="#" class="facebook"><i class="fa-brands fa-facebook"></i></a>
+      <a href="#" class="twitter"><i class="fa-brands fa-twitter"></i></a>
+      <a href="#" class="instagram"><i class="fa-brands fa-instagram"></i></a>
+      <a href="#" class="youtube"><i class="fa-brands fa-youtube"></i></a>
+    </div>
+
+    <!-- Timeline Slick Caousel -->
+    <section class="container-fluid my-4">
+      <div class="row bg-dark py-4">
+        <div class="col-md-12 p-0 bg-dark">
+          <div class="card bg-dark">
+            <h2 class="card-header">
+              <div class="row py-2">
+                <div class="text-white text-end">Switch</div>
+                <div class="col-md-12 text-center text-white">
+                  Historical Timeline of Film Association
+                </div>
+              </div>
+            </h2>
+
+            <div class="card-body">
+              <div class="row flex-container">
+                <div class="" style="visibility: visible">
+                  <div class="homeslider">
+                    <!-- Image Card -->
+                    <div class="card bg-dark text-white" style="width: 18rem">
+                      <img
+                        src="./images/homepage/women-1.jpeg"
+                        class="card-img-top img-fluid media-wrapper"
+                        alt="..."
+                      />
+                      <div class="card-body d-flex flex-column">
+                        <hr class="px-0 mx-0" />
+                        <h5 class="card-title m-0">Card title</h5>
+                        <p class="card-text">Description about Film</p>
+                        <a
+                          href="#"
+                          class="link-danger text-decoration-none fw-bold"
+                          >Learn More</a
+                        >
+                      </div>
+                    </div>
+                    <div class="card bg-dark text-white" style="width: 18rem">
+                      <img
+                        src="./images/homepage/women-1.jpeg"
+                        class="card-img-top img-fluid media-wrapper"
+                        alt="..."
+                      />
+                      <div class="card-body d-flex flex-column">
+                        <hr class="px-0 mx-0" />
+                        <h5 class="card-title m-0">Card title</h5>
+                        <p class="card-text">Description about Film</p>
+                        <a
+                          href="#"
+                          class="link-danger text-decoration-none fw-bold"
+                          >Learn More</a
+                        >
+                      </div>
+                    </div>
+                    <div class="card bg-dark text-white" style="width: 18rem">
+                      <img
+                        src="./images/homepage/women-2.jpeg"
+                        class="card-img-top img-fluid media-wrapper"
+                        alt="..."
+                      />
+                      <div class="card-body d-flex flex-column">
+                        <hr class="px-0 mx-0" />
+                        <h5 class="card-title m-0">Card title</h5>
+                        <p class="card-text">Description about Film</p>
+                        <a
+                          href="#"
+                          class="link-danger text-decoration-none fw-bold"
+                          >Learn More</a
+                        >
+                      </div>
+                    </div>
+                    <div class="card bg-dark text-white" style="width: 18rem">
+                      <img
+                        src="./images/homepage/women-1.jpeg"
+                        class="card-img-top img-fluid media-wrapper"
+                        alt="..."
+                      />
+                      <div class="card-body d-flex flex-column">
+                        <hr class="px-0 mx-0" />
+                        <h5 class="card-title m-0">Card title</h5>
+                        <p class="card-text">Description about Film</p>
+                        <a
+                          href="#"
+                          class="link-danger text-decoration-none fw-bold"
+                          >Learn More</a
+                        >
+                      </div>
+                    </div>
+                    <div class="card bg-dark text-white" style="width: 18rem">
+                      <img
+                        src="./images/homepage/women-1.jpeg"
+                        class="card-img-top img-fluid media-wrapper"
+                        alt="..."
+                      />
+                      <div class="card-body d-flex flex-column">
+                        <hr class="px-0 mx-0" />
+                        <h5 class="card-title m-0">Card title</h5>
+                        <p class="card-text">Description about Film</p>
+                        <a
+                          href="#"
+                          class="link-danger text-decoration-none fw-bold"
+                          >Learn More</a
+                        >
+                      </div>
+                    </div>
+                    <div class="card bg-dark text-white" style="width: 18rem">
+                      <img
+                        src="./images/homepage/women-3.jpeg"
+                        class="card-img-top img-fluid media-wrapper"
+                        alt="..."
+                      />
+                      <div class="card-body d-flex flex-column">
+                        <hr class="px-0 mx-0" />
+                        <h5 class="card-title m-0">Card title</h5>
+                        <p class="card-text">Description about Film</p>
+                        <a
+                          href="#"
+                          class="link-danger text-decoration-none fw-bold"
+                          >Learn More</a
+                        >
+                      </div>
+                    </div>
+                    <div class="card bg-dark text-white" style="width: 18rem">
+                      <img
+                        src="./images/homepage/women-1.jpeg"
+                        class="card-img-top img-fluid media-wrapper"
+                        alt="..."
+                      />
+                      <div class="card-body d-flex flex-column">
+                        <hr class="px-0 mx-0" />
+                        <h5 class="card-title m-0">Card title</h5>
+                        <p class="card-text">Description about Film</p>
+                        <a
+                          href="#"
+                          class="link-danger text-decoration-none fw-bold"
+                          >Learn More</a
+                        >
+                      </div>
+                    </div>
+                    <div class="card bg-dark text-white" style="width: 18rem">
+                      <img
+                        src="./images/homepage/women-2.jpeg"
+                        class="card-img-top img-fluid media-wrapper"
+                        alt="..."
+                      />
+                      <div class="card-body d-flex flex-column">
+                        <hr class="px-0 mx-0" />
+                        <h5 class="card-title m-0">Card title</h5>
+                        <p class="card-text">Description about Film</p>
+                        <a
+                          href="#"
+                          class="link-danger text-decoration-none fw-bold"
+                          >Learn More</a
+                        >
+                      </div>
+                    </div>
+                    <div class="card bg-dark text-white" style="width: 18rem">
+                      <img
+                        src="./images/homepage/women-1.jpeg"
+                        class="card-img-top img-fluid media-wrapper"
+                        alt="..."
+                      />
+                      <div class="card-body d-flex flex-column">
+                        <hr class="px-0 mx-0" />
+                        <h5 class="card-title m-0">Card title</h5>
+                        <p class="card-text">Description about Film</p>
+                        <a
+                          href="#"
+                          class="link-danger text-decoration-none fw-bold"
+                          >Learn More</a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Single Image Carousel -->
+    <section class="container-fluid my-4">
+      <div class="row">
+        <div class="col-lg-9">
+          <div
+            id="carouselExampleDark"
+            class="carousel carousel-dark slide d-flex flex-column justify-content-center"
+            data-bs-ride="carousel"
+          >
+            <div class="carousel-indicators">
+              <button
+                type="button"
+                data-bs-target="#carouselExampleDark"
+                data-bs-slide-to="0"
+                class="active"
+                aria-current="true"
+                aria-label="Slide 1"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleDark"
+                data-bs-slide-to="1"
+                aria-label="Slide 2"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleDark"
+                data-bs-slide-to="2"
+                aria-label="Slide 3"
+              ></button>
+            </div>
+            <div class="carousel-inner">
+              <div
+                class="carousel-item car-card active"
+                data-bs-interval="10000"
+              >
+                <img
+                  src="./images/homepage/car-1.png"
+                  class="d-block w-100"
+                  alt="..."
+                />
+                <div
+                  class="carousel-caption d-none d-md-block text-white text-shadow"
+                >
+                  <h5>First slide label</h5>
+                  <p>
+                    Some representative placeholder content for the first slide.
+                  </p>
+                </div>
+              </div>
+              <div class="carousel-item car-card" data-bs-interval="2000">
+                <img
+                  src="./images/homepage/car-2.png"
+                  class="d-block w-100"
+                  alt="..."
+                />
+                <div
+                  class="carousel-caption d-none d-md-block text-white text-shadow"
+                >
+                  <h5>Second slide label</h5>
+                  <p>
+                    Some representative placeholder content for the second
+                    slide.
+                  </p>
+                </div>
+              </div>
+              <div class="carousel-item car-card">
+                <img
+                  src="./images/homepage/car-1.png"
+                  class="d-block w-100"
+                  alt="..."
+                />
+                <div
+                  class="carousel-caption d-none d-md-block text-white text-shadow"
+                >
+                  <h5>Third slide label</h5>
+                  <p>
+                    Some representative placeholder content for the third slide.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#carouselExampleDark"
+              data-bs-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#carouselExampleDark"
+              data-bs-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+          <!-- Multi Image Slick Section -->
+          <div class="card my-4">
+            <h5 class="card-header">
+              <div class="row">
+                <div class="col">Shot In Nepal</div>
+                <div class="col" style="text-align: right">
+                  <a
+                    href="#"
+                    style="
+                      color: #2460b9;
+                      text-align: right;
+                      text-decoration: none;
+                    "
+                    >Explore All
+                    <i class="fa-solid fa-circle-chevron-right"></i>
+                  </a>
+                </div>
+              </div>
+            </h5>
+            <div class="card-body">
+              <div class="row flex-container">
+                <div class="shots_nepal-container" style="visibility: visible">
+                  <div class="slider slick-initialized slick-slider">
+                    <div class="slick-list" style="visibility: visible">
+                      <div
+                        class="slick-track moving-movie-list"
+                        style="opacity: 1; width: 20631px"
+                      >
+                        <!-- Image Card -->
+                        <a
+                          href="#"
+                          class="card slick-slide slick-cloned"
+                          style="width: 257.75px"
+                          data-slick-index="63"
+                          aria-hidden="true"
+                        >
+                          <div class="thumbnail slide-content">
+                            <img
+                              class="img-fluid"
+                              src="./images/homepage/man-3.jpeg"
+                              alt=""
+                            />
+                          </div>
+                          <div class="card-body">
+                            <span class="card-title">Uunchai (2022)</span>
+                          </div>
+                        </a>
+                        <a
+                          href="#"
+                          class="card slick-slide slick-cloned"
+                          style="width: 257.75px"
+                          data-slick-index="63"
+                          aria-hidden="true"
+                        >
+                          <div class="thumbnail slide-content">
+                            <img
+                              class="img-fluid"
+                              src="./images/homepage/man-3.jpeg"
+                              alt=""
+                            />
+                          </div>
+                          <div class="card-body">
+                            <span class="card-title">Uunchai (2022)</span>
+                          </div>
+                        </a>
+                        <a
+                          href="#"
+                          class="card slick-slide slick-cloned"
+                          style="width: 257.75px"
+                          data-slick-index="63"
+                          aria-hidden="true"
+                        >
+                          <div class="thumbnail slide-content">
+                            <img
+                              class="img-fluid"
+                              src="./images/homepage/man-3.jpeg"
+                              alt=""
+                            />
+                          </div>
+                          <div class="card-body">
+                            <span class="card-title">Uunchai (2022)</span>
+                          </div>
+                        </a>
+                        <a
+                          href="#"
+                          class="card slick-slide slick-cloned"
+                          style="width: 257.75px"
+                          data-slick-index="63"
+                          aria-hidden="true"
+                        >
+                          <div class="thumbnail slide-content">
+                            <img
+                              class="img-fluid"
+                              src="./images/homepage/man-3.jpeg"
+                              alt=""
+                            />
+                          </div>
+                          <div class="card-body">
+                            <span class="card-title">Uunchai (2022)</span>
+                          </div>
+                        </a>
+                        <a
+                          href="#"
+                          class="card slick-slide slick-cloned"
+                          style="width: 257.75px"
+                          data-slick-index="63"
+                          aria-hidden="true"
+                        >
+                          <div class="thumbnail slide-content">
+                            <img
+                              class="img-fluid"
+                              src="./images/homepage/man-3.jpeg"
+                              alt=""
+                            />
+                          </div>
+                          <div class="card-body">
+                            <span class="card-title">Uunchai (2022)</span>
+                          </div>
+                        </a>
+                        <a
+                          href="#"
+                          class="card slick-slide slick-cloned"
+                          style="width: 257.75px"
+                          data-slick-index="63"
+                          aria-hidden="true"
+                        >
+                          <div class="thumbnail slide-content">
+                            <img
+                              class="img-fluid"
+                              src="./images/homepage/man-3.jpeg"
+                              alt=""
+                            />
+                          </div>
+                          <div class="card-body">
+                            <span class="card-title">Uunchai (2022)</span>
+                          </div>
+                        </a>
+                        <a
+                          href="#"
+                          class="card slick-slide slick-cloned"
+                          style="width: 257.75px"
+                          data-slick-index="63"
+                          aria-hidden="true"
+                        >
+                          <div class="thumbnail slide-content">
+                            <img
+                              class="img-fluid"
+                              src="./images/homepage/man-3.jpeg"
+                              alt=""
+                            />
+                          </div>
+                          <div class="card-body">
+                            <span class="card-title">Uunchai (2022)</span>
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3">
+          <!-- Person Info Sidebar  -->
+          <div class="card profile-card mb-4">
+            <div class="person-profile">
+              <img
+                src="./images/homepage/man-1.jpeg"
+                class="card-img-top"
+                alt=""
+              />
+            </div>
+            <div class="card-body">
+              <h4 class="card-title">विवश कुमार माझी</h4>
+              <p class="card-text text-danger fw-bold">
+                अध्यक्ष, माझी चलचित्र संघ
+              </p>
+            </div>
+          </div>
+          <div class="card profile-card mb-4">
+            <div class="person-profile">
+              <img
+                src="./images/homepage/man-1.jpeg"
+                class="card-img-top"
+                alt=""
+              />
+            </div>
+            <div class="card-body">
+              <h4 class="card-title">अमृता माया माझी</h4>
+              <p class="card-text text-danger fw-bold">
+                महासचिव, माझी चलचित्र संघ
+              </p>
+            </div>
+          </div>
+          <div class="card profile-card mb-4">
+            <div class="person-profile">
+              <img
+                src="./images/homepage/man-1.jpeg"
+                class="card-img-top"
+                alt=""
+              />
+            </div>
+            <div class="card-body">
+              <h4 class="card-title">कुमार माझी</h4>
+              <p class="card-text text-danger fw-bold">
+                कोषाध्यक्ष, माझी चलचित्र संघ
+              </p>
+            </div>
+          </div>
+          <div class="mb-4">
+            <a href="#" class="btn btn-primary btn-main w-100">View All</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Info and Notices -->
+    <section class="container-fluid my-4">
+      <div class="row">
+        <div class="col-md-6 m-0">
+          <div class="card">
+            <h5 class="card-header">Film Development Board</h5>
+            <div class="card-body">
+              <p id="show-text" class="card-text truncate-multiline">
+                Film Development Board (FDB) is established on 30 June 2000 by
+                the Government of Nepal according to the existed Motion Picture
+                (Production, Exhibition and Distribution) Act amended on 20th
+                November 1991. The constitution of the Film Development Board
+                was with the Government deep interest in development and
+                promotion of motion picture sector in Nepal. It has obviously
+                created an environment of supporting for the promotion of
+                differential aspect of motion picture in Nepal. The Board thus,
+                is indeed a liaison to facilitate the conceptualisation, making,
+                distribution and exhibition of films in Nepal. It also attempts
+                abridging the gap between the film entrepreneurship and the
+                government processes. However, the Board is bound to take care
+                of safety of the people and support to interest for the
+                inspiring films of the common populace. The Board is in reality
+                a balance among the people at large, government and the process
+                of filmmaking.
+              </p>
+              <a id="show-more" class="show-link fw-bold p-0">See More</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <!-- Notice Tabs Headings -->
+          <ul class="nav nav-fill nav-tabs border" role="tablist">
+            <li class="nav-item" role="presentation">
+              <a
+                class="nav-link active"
+                id="fill-tab-0"
+                data-bs-toggle="tab"
+                href="#fill-tabpanel-0"
+                role="tab"
+                aria-controls="fill-tabpanel-0"
+                aria-selected="true"
+              >
+                Notice
+              </a>
+            </li>
+            <li class="nav-item" role="presentation">
+              <a
+                class="nav-link"
+                id="fill-tab-1"
+                data-bs-toggle="tab"
+                href="#fill-tabpanel-1"
+                role="tab"
+                aria-controls="fill-tabpanel-1"
+                aria-selected="false"
+              >
+                Press Release
+              </a>
+            </li>
+            <li class="nav-item" role="presentation">
+              <a
+                class="nav-link"
+                id="fill-tab-2"
+                data-bs-toggle="tab"
+                href="#fill-tabpanel-2"
+                role="tab"
+                aria-controls="fill-tabpanel-2"
+                aria-selected="false"
+              >
+                Events
+              </a>
+            </li>
+            <li class="nav-item" role="presentation">
+              <a
+                class="nav-link"
+                id="fill-tab-2"
+                data-bs-toggle="tab"
+                href="#fill-tabpanel-3"
+                role="tab"
+                aria-controls="fill-tabpanel-3"
+                aria-selected="false"
+              >
+                News
+              </a>
+            </li>
+            <li class="nav-item" role="presentation">
+              <a
+                class="nav-link"
+                id="fill-tab-2"
+                data-bs-toggle="tab"
+                href="#fill-tabpanel-4"
+                role="tab"
+                aria-controls="fill-tabpanel-4"
+                aria-selected="false"
+              >
+                Report
+              </a>
+            </li>
+          </ul>
+
+          <!-- Notice Tabs Details -->
+          <div class="tab-content" id="tab-content">
+            <div
+              class="tab-pane active"
+              id="fill-tabpanel-0"
+              role="tabpanel"
+              aria-labelledby="fill-tab-0"
+            >
+              <table class="table table-striped border-0">
+                <tbody>
+                  <tr>
+                    <td scope="row" class="border-0">
+                      <a href="#" class="bg-transparent show-link">
+                        Invitation for Bids (E-bidding) for Construction of
+                        Indoor Film Studio at Banepa Municipality, Ward no 10 &
+                        13, Kavrepalanchowk</a
+                      >
+                      <p class="card-text">
+                        <small class="text-muted"
+                          >1&nbsp;week, 3&nbsp;days ago</small
+                        >
+                      </p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td scope="row" class="border-0">
+                      <a href="#" class="bg-transparent show-link">
+                        पटकथा लेखन सम्बन्धी तीन दिने कार्यशालमा सहभागिता
+                        सम्बन्धी सूचना</a
+                      >
+                      <p class="card-text">
+                        <small class="text-muted"
+                          >2&nbsp;week, 4&nbsp;days ago</small
+                        >
+                      </p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td scope="row" class="border-0">
+                      <a href="#" class="bg-transparent show-link">
+                        मेकअप सम्बन्धी पाँच दिने कार्यशालामा सहभागिता सम्बन्धी
+                        सूचना (२०८१/०८२)</a
+                      >
+                      <p class="card-text">
+                        <small class="text-muted"
+                          >3&nbsp;week, 3&nbsp;days ago</small
+                        >
+                      </p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td
+                      scope="row"
+                      class="border-0 p-0 my-3 d-flex justify-content-center"
+                    >
+                      <a href="#" class="btn btn-primary btn-main w-100"
+                        >See All Notices</a
+                      >
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div
+              class="tab-pane"
+              id="fill-tabpanel-1"
+              role="tabpanel"
+              aria-labelledby="fill-tab-1"
+            >
+              <table class="table table-striped border-0">
+                <tbody>
+                  <tr>
+                    <td scope="row" class="border-0">
+                      <a href="#" class="bg-transparent show-link">
+                        प्रेस विज्ञप्ती</a
+                      >
+                      <p class="card-text">
+                        <small class="text-muted"
+                          >1&nbsp;week, 3&nbsp;days ago</small
+                        >
+                      </p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td scope="row" class="border-0">
+                      <a href="#" class="bg-transparent show-link">
+                        २०७६ र २०७७ को राष्ट्रिय चलचित्र पुरस्कार, विशेष चलचित्र
+                        तथा दीर्घ साधना सम्मान समारोह सम्पन्न (४ बैशाख, २०७९,
+                        काठमाडौ)</a
+                      >
+                      <p class="card-text">
+                        <small class="text-muted"
+                          >2&nbsp;week, 4&nbsp;days ago</small
+                        >
+                      </p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td scope="row" class="border-0">
+                      <a href="#" class="bg-transparent show-link">
+                        राष्ट्रिय चलचित्र पुरस्कार तथा सम्मान समारोह, २०८०
+                        सम्बन्धमा</a
+                      >
+                      <p class="card-text">
+                        <small class="text-muted"
+                          >3&nbsp;week, 3&nbsp;days ago</small
+                        >
+                      </p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td
+                      scope="row"
+                      class="border-0 p-0 my-3 d-flex justify-content-center"
+                    >
+                      <a href="#" class="btn btn-primary btn-main w-100"
+                        >See All Press Releases</a
+                      >
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div
+              class="tab-pane"
+              id="fill-tabpanel-2"
+              role="tabpanel"
+              aria-labelledby="fill-tab-2"
+            >
+              <table class="table table-striped border-0">
+                <tbody>
+                  <tr>
+                    <td scope="row" class="border-0">
+                      <a href="#" class="bg-transparent show-link">
+                        राष्ट्रिय चलचित्र पुरस्कार तथा सम्मान सम्बन्धी विवरण</a
+                      >
+                      <p class="card-text">
+                        <small class="text-muted"
+                          >1&nbsp;week, 3&nbsp;days ago</small
+                        >
+                      </p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td scope="row" class="border-0">
+                      <a href="#" class="bg-transparent show-link">
+                        चलचित्र विकास बोर्डका कर्मचारीहरूको क्षमता अभिवृद्धिको
+                        उद्देश्यले आयोजित *Skill Development Training" सम्पन्न
+                        भएको छ|</a
+                      >
+                      <p class="card-text">
+                        <small class="text-muted"
+                          >2&nbsp;week, 4&nbsp;days ago</small
+                        >
+                      </p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td scope="row" class="border-0">
+                      <a href="#" class="bg-transparent show-link">
+                        फिल्ममेकिङ मास्टरक्लास सम्पन्न, सिक्स बडिज्को 'सिगरेट'
+                        बन्यो उत्कृष्ट चलचित्र'</a
+                      >
+                      <p class="card-text">
+                        <small class="text-muted"
+                          >3&nbsp;week, 3&nbsp;days ago</small
+                        >
+                      </p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td
+                      scope="row"
+                      class="border-0 p-0 my-3 d-flex justify-content-center"
+                    >
+                      <a href="#" class="btn btn-primary btn-main w-100"
+                        >See All Events</a
+                      >
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div
+              class="tab-pane"
+              id="fill-tabpanel-3"
+              role="tabpanel"
+              aria-labelledby="fill-tab-3"
+            >
+              <table class="table table-striped border-0">
+                <tbody>
+                  <tr>
+                    <td scope="row" class="border-0">
+                      <a href="#" class="bg-transparent show-link">
+                        विशिष्ट चलचित्रकर्मी श्रेणी तथा चलचित्रकर्मी श्रेणी
+                        परिचयपत्र प्राप्त चलचित्रकर्मीहरु ।</a
+                      >
+                      <p class="card-text">
+                        <small class="text-muted"
+                          >1&nbsp;week, 3&nbsp;days ago</small
+                        >
+                      </p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td scope="row" class="border-0">
+                      <a href="#" class="bg-transparent show-link">
+                        चलचित्र विकास बोर्डबाट छात्रवृत्ति वितरण २०८०</a
+                      >
+                      <p class="card-text">
+                        <small class="text-muted"
+                          >2&nbsp;week, 4&nbsp;days ago</small
+                        >
+                      </p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td scope="row" class="border-0">
+                      <a href="#" class="bg-transparent show-link">
+                        चलचित्रकर्मी कल्याणकोष तथा चलचित्र विकास बोर्डको तर्फबाट
+                        सम्मान कार्यक्रम सम्पन्न</a
+                      >
+                      <p class="card-text">
+                        <small class="text-muted"
+                          >3&nbsp;week, 3&nbsp;days ago</small
+                        >
+                      </p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td
+                      scope="row"
+                      class="border-0 p-0 my-3 d-flex justify-content-center"
+                    >
+                      <a href="#" class="btn btn-primary btn-main w-100"
+                        >See All News</a
+                      >
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div
+              class="tab-pane"
+              id="fill-tabpanel-4"
+              role="tabpanel"
+              aria-labelledby="fill-tab-4"
+            >
+              <table class="table table-striped border-0">
+                <tbody>
+                  <tr>
+                    <td scope="row" class="border-0">
+                      <a href="#" class="bg-transparent show-link">
+                        सूचनाको हक सम्बन्धी ऐनको दफा ५(३) बमोजिमको विवरण</a
+                      >
+                      <p class="card-text">
+                        <small class="text-muted"
+                          >1&nbsp;week, 3&nbsp;days ago</small
+                        >
+                      </p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td scope="row" class="border-0">
+                      <a href="#" class="bg-transparent show-link">
+                        बोर्डको सूचनाको हक सम्बन्धी ऐनको दफा ५(३) बमोजिमको विवरण
+                        (२०८० बैशाख, जेठ र असार)</a
+                      >
+                      <p class="card-text">
+                        <small class="text-muted"
+                          >2&nbsp;week, 4&nbsp;days ago</small
+                        >
+                      </p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td scope="row" class="border-0">
+                      <a href="#" class="bg-transparent show-link">
+                        बोर्डको सूचनाको हक सम्बन्धी ऐनको दफा ५(३) बमोजिमको विवरण
+                        (२०७९ माघ, फागुन र चैत्र)</a
+                      >
+                      <p class="card-text">
+                        <small class="text-muted"
+                          >3&nbsp;week, 3&nbsp;days ago</small
+                        >
+                      </p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td scope="row" class="border-0">
+                      <a href="#" class="bg-transparent show-link">
+                        आ.व. २०७९।८० को बक्स अफिस कलेक्शन रिपोर्ट सार्वजनिक</a
+                      >
+                      <p class="card-text">
+                        <small class="text-muted"
+                          >3&nbsp;week, 3&nbsp;days ago</small
+                        >
+                      </p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td
+                      scope="row"
+                      class="border-0 p-0 my-3 d-flex justify-content-center"
+                    >
+                      <a href="#" class="btn btn-primary btn-main w-100"
+                        >See All Reports</a
+                      >
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Quick Links -->
+    <section class="container-fluid bg-light-blue">
+      <div class="d-flex w-100 justify-content-center align-items-center">
+        <h3 class="my-3 mt-5 border-light">Quick Links</h3>
+      </div>
+      <div class="p-4 mx-5">
+        <div class="card-group row quick-links-cards">
+          <div
+            class="card w-100 col-md-3 col-sm-6 link-card text-center"
+            style="border-radius: 12px"
+          >
+            <i
+              class="fa fa-address-book fa-3x py-4 mt-4"
+              aria-hidden="true"
+            ></i>
+            <div class="card-body p-0 m-0">
+              <h5 class="card-title mb-2">Card title</h5>
+            </div>
+            <a href="#" class="card-footer w-100 py-3 fs-6 nav-link fw-bold">
+              थप जानकारी
+              <i class="fa fa-chevron-right" aria-hidden="true"></i>
+            </a>
+          </div>
+          <div
+            class="card w-100 col-md-3 col-sm-6 link-card text-center"
+            style="border-radius: 12px"
+          >
+            <i class="fa fa-clone fa-3x py-4 mt-4" aria-hidden="true"></i>
+            <div class="card-body p-0 m-0">
+              <h5 class="card-title mb-2">Card title</h5>
+            </div>
+            <a href="#" class="card-footer w-100 py-3 fs-6 nav-link fw-bold">
+              थप जानकारी
+              <i class="fa fa-chevron-right" aria-hidden="true"></i>
+            </a>
+          </div>
+          <div
+            class="card w-100 col-md-3 col-sm-6 link-card text-center"
+            style="border-radius: 12px"
+          >
+            <i class="fa fa-bolt fa-3x py-4 mt-4" aria-hidden="true"></i>
+            <div class="card-body p-0 m-0">
+              <h5 class="card-title mb-2">Card title</h5>
+            </div>
+            <a href="#" class="card-footer w-100 py-3 fs-6 nav-link fw-bold">
+              थप जानकारी
+              <i class="fa fa-chevron-right" aria-hidden="true"></i>
+            </a>
+          </div>
+          <div
+            class="card w-100 col-md-3 col-sm-6 link-card text-center"
+            style="border-radius: 12px"
+          >
+            <i class="fa fa-asterisk fa-3x py-4 mt-4" aria-hidden="true"></i>
+            <div class="card-body p-0 m-0">
+              <h5 class="card-title mb-2">Card title</h5>
+            </div>
+            <a href="#" class="card-footer w-100 py-3 fs-6 nav-link fw-bold">
+              थप जानकारी
+              <i class="fa fa-chevron-right" aria-hidden="true"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- JQuery -->
     <script src="/js/jquery.js"></script>
 
+    <!-- Slick JS -->
+    <script src="./js/slick.min.js"></script>
+
     <!-- Bootstrap JQuery -->
     <script src="./js/bootstrap/bootstrap.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
 
     <!-- Custom js -->
     <script src="./js/script.js"></script>
